@@ -13,11 +13,16 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {OverlayContainer} from '@angular/cdk/overlay';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import {MatCardModule} from '@angular/material/card';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    AboutmeComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,8 @@ import {OverlayContainer} from '@angular/cdk/overlay';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

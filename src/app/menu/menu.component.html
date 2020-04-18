@@ -1,4 +1,4 @@
-<mat-sidenav-container class="sidenav-container my-theme">
+<mat-sidenav-container  class="sidenav-container my-theme">
   <mat-sidenav #drawer class="sidenav" 
       [ngClass]= "{hidden: (isHandset$ | async) === false}"
       fixedInViewport="false"
@@ -7,9 +7,8 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">About Me</a>
-      <a mat-list-item href="#">Projects</a>
-      <a mat-list-item href="#">Resources</a>
+      <a mat-list-item routerLink="/aboutme">About Me</a>
+      <a mat-list-item routerLink="/projects">Projects</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -22,18 +21,19 @@
         (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span><!--<a href="#">Andrew - Developer</a>--></span> 
-      <span class="spacer"></span>
+      <!--<span class="spacer"></span>-->
       <span
       *ngIf="(isHandset$ | async) === false"
       >
-        <a href="#">About Me</a>
-        <a href="#">Projects</a>
-        <a href="#">Resources</a>
+      <mat-nav-list>
+        <a routerLink="/aboutme">About Me</a>
+        <a routerLink="/projects">Projects</a>
+      </mat-nav-list>
       </span>
 
     </mat-toolbar>
     <!-- Add Content Here -->
-    <ng-content></ng-content>
+    <!--<ng-content></ng-content>-->
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
