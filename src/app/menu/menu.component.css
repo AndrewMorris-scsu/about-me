@@ -1,5 +1,9 @@
 .sidenav-container {
   height: 100%;
+  background-image: url('/assets/images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
 .sidenav {
@@ -14,4 +18,19 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar a {
+  display: inline-block;
+  margin: 0 10px; 
+  color: white;
+  text-decoration: none;
 }

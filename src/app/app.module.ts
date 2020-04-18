@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MenuComponent } from './menu/menu.component';
@@ -14,12 +13,16 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {OverlayContainer} from '@angular/cdk/overlay';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import {MatCardModule} from '@angular/material/card';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
-    MenuComponent
+    MenuComponent,
+    AboutmeComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import {OverlayContainer} from '@angular/cdk/overlay';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

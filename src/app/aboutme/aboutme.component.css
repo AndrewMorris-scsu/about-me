@@ -1,0 +1,44 @@
+.mainContent {
+    position: relative;
+}
+
+.mat-card {background: rgba(0,0,0,0.75);}
+
+.aboutmetext {
+    text-align: center;
+    margin-top: auto;
+    line-height: 1.5;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.textformat {
+    color: white;
+    font-weight: 100;
+    font-size: medium;
+}
+
+
+.textformattitle {
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+
+.divider {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .textformat{
+        font-size: x-large;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .textformat{
+        font-size: xx-large;
+    }
+}
