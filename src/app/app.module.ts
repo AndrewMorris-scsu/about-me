@@ -16,13 +16,16 @@ import {OverlayContainer} from '@angular/cdk/overlay';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import {MatCardModule} from '@angular/material/card';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProcessingComponent } from './processing/processing.component';
+import { ScriptLoaderService } from './script-loader.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     AboutmeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ProcessingComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,7 @@ import { ProjectsComponent } from './projects/projects.component';
     MatListModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [ScriptLoaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
